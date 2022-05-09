@@ -4,16 +4,22 @@
     box-sizing: border-box;
 }
 body {
-    background-image: url('fondo.png');
+    background-image: url('descarga.jpg');
 }
 
 .error {
-    color: red;
+    color: rgb(255, 0, 13);
+    display: block;
+    margin: 0px auto;
+    width: 100%;
+    font-family: initial;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .form-register {
-    width: 400px;
-    background-color: #24303c;
+    width: 100%;
+    background-color: cadetblue;
     padding: 30px;
     margin: auto;
     margin-top: 100px;
@@ -23,19 +29,24 @@ body {
     box-shadow: 7px 13px 37px #000;
 }
 .form-register h4 {
-    font-size: 22px;
+    font-size: 45px;
     margin-bottom: 20px;
+    display: block;
+    width: 100%;
+    margin: 0px auto;
 }
 .controls {
     width: 100%;
-    background: #24303c ;
+    display: block;
+    background: #fff ;
     padding: 10px;
     border-radius: 4px;
-    margin-top: 15px;
-    border: 1 px solid #1f53c5;
+    margin: 30px auto;
+    margin-bottom: 0px;
+    border: 0px;
     font-family: 'calibri';
     font-size: 18px;
-    color: white;
+    color: black;
 }
 .form-register p {
     height: 40px;
@@ -49,11 +60,19 @@ body {
     text-decoration: underline;
 }
 .form-register .botons {
-    width: 100%;
-    background: #1f53c5;
+    width: 75%;
+    display: block;
+    background: #8b0855;
     border: none;
     padding: 12px;
     color: white;
-    margin: 16px 0;
+    margin: 16px auto;
     font-size: 16px;
+}
+
+#centrador {
+    /* vamos a buscar, las esferas del centrador ♪ ♫ ♪ ♫  */
+    display: block;
+    width: 50%;
+    margin: 0px auto;
 }
