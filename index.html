@@ -6,29 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-barra-de-navegacion.css">
     <title>Registro de Capitana de Equipo</title>
 </head>
 <body>
+    <!-- barra de navegacion1 -->
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+            <div class="nav-title">
+                Torneos de fútbol femenino
+            </div>
+        </div>
+        <div class="nav-btn">
+            <label for="nav-check">
+                <span>Opcion 1</span>
+                <span>Opcion 2</span>
+                <span>Opcion 3</span>
+            </label>
+        </div>
+        <div class="nav-links">
+            <a href="//github.io/jo_geek" target="_blank">Home</a>
+            <a href="http://stackoverflow.com/users/4084003/" target="_blank">Torneos</a>
+            <a href="https://codepen.io/jo_Geek/" target="_blank">Equipos</a>
+            <a href="https://jsfiddle.net/user/jo_Geek/" target="_blank">Logout</a>
+        </div>
+    </div>
+
     <form id='formulario'>
     <section class="form-register">
-        <h4>Registro de Capitana de Equipo</h4>
-        <input class="controls" type="text" id="nombre" name="nombre" value="" placeholder="Nombre">
-        <div class="error" id="errorN"></div>
-        <input class="controls" type="text" id="apellido" name="apellido" value="" placeholder="Apellido">
-        <div class="error" id="errorA"></div>
-        <input class="controls" type="text" id="dni" name="dni" value="" placeholder="DNI">
-        <div class="error" id="errorDNI"></div>
-        <input class="controls" type="email" id="email" name="email" value="" placeholder="Correo electrónico">
-        <div class="error" id="errorE"></div>
-        <input class="controls" type="text" id="telefonoCelular" name="telefonoCelular" value="" placeholder="Teléfono celular">
-        <div class="error" id="errorTC"></div>
-        <input class="controls" type="password" id="password1" name="password1" value="" placeholder="Ingrese contraseña">
-        <div class="error" id="errorP1"></div>
-        <input class="controls" type="password" id="password2" name="password2" value="" placeholder="Confirme su contraseña">
-        <div class="error" id="errorP2"></div>
-        <p>Estoy de acuerdo con <a href="#">Términos y condiciones </a></p>     
-        <input class="botons" type="button" value="Registrar" onclick="return enviarFormulario()">
-        <p><a href="#">¿Ya tengo cuenta?</a></p>
+        <div id="centrador">
+            <h4>Registro de Capitana de Equipo</h4>
+            <input class="controls" type="text" id="nombre" name="nombre" value="" placeholder="Nombre">
+            <div class="error" id="errorN"></div>
+            <input class="controls" type="text" id="apellido" name="apellido" value="" placeholder="Apellido">
+            <div class="error" id="errorA"></div>
+            <input class="controls" type="text" id="dni" name="dni" value="" placeholder="DNI">
+            <div class="error" id="errorDNI"></div>
+            <input class="controls" type="email" id="email" name="email" value="" placeholder="Correo electrónico">
+            <div class="error" id="errorE"></div>
+            <input class="controls" type="text" id="telefonoCelular" name="telefonoCelular" value="" placeholder="Teléfono celular">
+            <div class="error" id="errorTC"></div>
+            <input class="controls" type="password" id="password1" name="password1" value="" placeholder="Ingrese contraseña">
+            <div class="error" id="errorP1"></div>
+            <input class="controls" type="password" id="password2" name="password2" value="" placeholder="Confirme su contraseña">
+            <div class="error" id="errorP2"></div>
+            <p>Estoy de acuerdo con <a href="#">Términos y condiciones </a></p>     
+            <input class="botons" type="button" value="Registrar" onclick="return enviarFormulario()">
+            <p><a href="#">¿Ya tengo cuenta?</a></p>
+        </div>
     </section>
 </form>
     <script src='formulario.js'> </script>
