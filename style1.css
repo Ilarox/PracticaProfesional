@@ -8,13 +8,13 @@
 body {
     height: 100vh;
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: center;
-    background-image: url(3.jpg);
+    background-image: url("https://webimages.iadb.org/Drupal_pantheon/2021-12/iStock-1049704540%20(1)_0.jpg?VersionId=jE7ODk8H03AEP9D8b1xmmrAy4G6cHRN3");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: #fff;
+    color: #222;
 }
 
 .container-form {
@@ -32,6 +32,7 @@ body {
 }
 
 .message {
+    margin-top: -180px;
     padding: 1rem;
 }
 
@@ -62,15 +63,31 @@ body {
     width: 400px;
     padding: 1rem;
     margin: 2rem;
-    background-color: rgb(51, 51, 51, 0.602);
+    background-color: rgb(51, 51, 51, 0.7);
+    border-radius: 5px;
     text-align: center;
+    color: #fff;
+    margin-bottom: 50px;
+    
+}
+
+.soyUnInputBonito::placeholder{
+    color: #fff;
+}
+.soyUnInputMasBonito::placeholder{
+    color: #fff;
 }
 
 .create-account {
-    padding: 2.7rem 0;
+    padding: 1.5rem 0;
     font-size: 1.7rem;
+    margin-bottom: 70px;
+    margin: 28px;
 }
 
+.cuenta-gratis{
+    margin-bottom: 50px;
+}
 .iconos {
     width: 200px;
     display: flex;
@@ -96,15 +113,12 @@ body {
     cursor: pointer;
 }
 
-.cuenta-gratis {
-    padding: 2rem 0;
-}
 
 .formulario input {
     width: 70%;
     display: block;
     margin: auto;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     background-color: transparent;
     border: none;
     border-bottom: white thin solid;
