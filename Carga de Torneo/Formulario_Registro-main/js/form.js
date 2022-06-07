@@ -1,10 +1,10 @@
-const nombre = document.getElementById("myname");
-const apellidos = document.getElementById("surname");
-const correo = document.getElementById("email");
-const celular = document.getElementById("mobile");
-const contrasenia = document.getElementById("password");
-const contrasenia2 = document.getElementById("repeatPassword");
-const terminosYcondiciones = document.getElementById("termsAndConditions");
+const nombre = document.getElementById("nombre");
+const tipoTorneo = document.getElementById("tipoTorneo");
+const fechaInicio = document.getElementById("fechaInicio");
+const fechaFin = document.getElementById("fechaFin");
+const valorInscripcion = document.getElementById("valorInscripcion");
+const minEquipos = document.getElementById("minEquipos");
+const maxEquipos = document.getElementById("maxEquipos");
 const form = document.getElementById("form");
 const listInputs = document.querySelectorAll(".form-input");
 
@@ -24,40 +24,38 @@ function validacionForm() {
   });
 
   if (nombre.value.length < 1 || nombre.value.trim() == "") {
-    mostrarMensajeError("myname", "Nombre no valido*");
+    mostrarMensajeError("nombre", "Nombre no válido");
     condicion = false;
   }
-  if (apellidos.value.length < 1 || apellidos.value.trim() == "") {
-    mostrarMensajeError("surname", "Apellido no valido");
+  if (tipoTorneo.value.length < 1 || tipoTorneo.value.trim() == "") {
+    mostrarMensajeError("tipoTorneo", "Tipo de torneo no válido");
     condicion = false;
   }
-  if (correo.value.length < 1 || correo.value.trim() == "") {
-    mostrarMensajeError("email", "Correo no valido*");
+  if (fechaInicio.value.length < 1 || fechaInicio.value.trim() == "") {
+    mostrarMensajeError("fechaInicio", "Fecha no válida");
     condicion = false;
   }
   if (
-    celular.value.length != 9 ||
-    celular.value.trim() == "" ||
-    isNaN(celular.value)
+    fechaFin.value.length != 9 ||
+    fechaFin.value.trim() == "" ||
+    isNaN(fechaFin.value)
   ) {
-    mostrarMensajeError("mobile", "Celular no valido*");
+    mostrarMensajeError("fechaFin", "Fecha no válida");
     condicion = false;
   }
-  if (contrasenia.value.length < 1 || contrasenia.value.trim() == "") {
-    mostrarMensajeError("password", "Contraseña no valido*");
+  if (valorInscripcion.value.length < 1 || valorInscripcion.value.trim() == "") {
+    mostrarMensajeError("valorInscripcion", "Valor no válido");
     condicion = false;
   }
-  if (contrasenia2.value != contrasenia.value) {
-    mostrarMensajeError("repeatPassword", "Contraseña error*");
+  if (minEquipos.value != minEquipos.value) {
+    mostrarMensajeError("minEquipos", "Valor no válido");
     condicion = false;
   }
-  if (!terminosYcondiciones.checked) {
-    mostrarMensajeError("termsAndConditions", "Acepte*");
+  if (maxEquipos.value != maxEquipos.value) {
+    mostrarMensajeError("maxEquipos", "Valor no válido");
     condicion = false;
-  } else {
-    mostrarMensajeError("termsAndConditions", "");
   }
-  return condicion;
+ 
 }
 
 function mostrarMensajeError(claseInput, mensaje) {
