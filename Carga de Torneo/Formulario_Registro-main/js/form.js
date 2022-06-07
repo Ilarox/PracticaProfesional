@@ -23,23 +23,20 @@ function validacionForm() {
     element.lastElementChild.innerHTML = "";
   });
 
-  if (nombre.value.length < 1 || nombre.value.trim() == "") {
+  if (nombre.value.length < 1 || nombre.value.trim() == "") //trim() elimina los espacios en blanco en ambos extremos del string.
+  {
     mostrarMensajeError("nombre", "Nombre no válido");
     condicion = false;
   }
-  if (tipoTorneo.value.length < 1 || tipoTorneo.value.trim() == "") {
+  if (tipoTorneo.value.length < 1) {
     mostrarMensajeError("tipoTorneo", "Tipo de torneo no válido");
     condicion = false;
   }
-  if (fechaInicio.value.length < 1 || fechaInicio.value.trim() == "") {
+  if (fechaInicio.value.length < 1) {
     mostrarMensajeError("fechaInicio", "Fecha no válida");
     condicion = false;
   }
-  if (
-    fechaFin.value.length != 9 ||
-    fechaFin.value.trim() == "" ||
-    isNaN(fechaFin.value)
-  ) {
+  if (fechaFin.value.length < 1){
     mostrarMensajeError("fechaFin", "Fecha no válida");
     condicion = false;
   }
@@ -47,11 +44,11 @@ function validacionForm() {
     mostrarMensajeError("valorInscripcion", "Valor no válido");
     condicion = false;
   }
-  if (minEquipos.value != minEquipos.value) {
+  if (minEquipos.value < 1) {
     mostrarMensajeError("minEquipos", "Valor no válido");
     condicion = false;
   }
-  if (maxEquipos.value != maxEquipos.value) {
+  if (maxEquipos.value <1) {
     mostrarMensajeError("maxEquipos", "Valor no válido");
     condicion = false;
   }
