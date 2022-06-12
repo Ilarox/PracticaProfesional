@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>Registro y Login</title>
+</head>
+
+<body>
+    <div class="container-form sign-up">
+        <div class="welcome-back">
+            <div class="message">
+                <h2>Bienvenido a Torneos de Fútbol Femenino</h2>
+                <p>Si ya tienes una cuenta, inicia sesión aquí</p>
+                <button class="sign-up-btn">Iniciar Sesión</button>
+            </div>
+        </div>
+        <form class="formulario">
+            <h2 class="create-account">Crear una cuenta</h2>
+            <input type="text" id="nombreId" class="soyUnInputBonito" placeholder="Nombre de tu equipo">
+            <input type="email" id="emailId" class="soyUnInputBonito" placeholder="Email de tu equipo">
+            <input type="text" id="telefonoId" class="soyUnInputBonito" placeholder="Teléfono de tu equipo">
+            <input type="password" id="contraseniaId" class="soyUnInputBonito" placeholder="Contraseña">
+            <input type="password" id="verificacionId" class="soyUnInputBonito" placeholder="Verificación de contraseña">
+            <input type="button" value="Registrarse" onClick="ValidarRegistro()">
+        </form>
+    </div>
+    <div class="container-form sign-in">
+        <form class="formulario">
+            <h2 class="create-account">Iniciar Sesión</h2>
+            <input type="email" class="soyUnInputMasBonito" placeholder="Email">
+            <input type="password" class="soyUnInputMasBonito" placeholder="Contraseña">
+            <input type="button" value="Iniciar Sesión">
+        </form>
+        <div class="welcome-back">
+            <div class="message">
+                <h2>Bienvenido de nuevo</h2>
+                <p>Si aún no tienes una cuenta, regístrese aquí</p>
+                <button class="sign-in-btn">Registrarse</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html> 
