@@ -8,6 +8,17 @@ const maxEquipos = document.getElementById("maxEquipos");
 const form = document.getElementById("form");
 const listInputs = document.querySelectorAll(".form-input");
 
+
+
+
+function onlyNumberKey(evt) 
+{ 
+  // Only ASCII character in that range allowed
+  var ASCIICode = (evt.which) ? evt.which : evt.keyCode
+  if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57)) return false;
+  return true;
+}
+
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   let condicion = validacionForm();
@@ -40,6 +51,7 @@ function validacionForm() {
     mostrarMensajeError("valorInscripcion", "Valor no válido");
     condicion = false;
   }
+ 
   if (minEquipos.value <1 || minEquipos.value > maxEquipos.value) {
     mostrarMensajeError("minEquipos", "Valor no válido");
     condicion = false;
