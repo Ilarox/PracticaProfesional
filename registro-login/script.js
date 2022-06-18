@@ -1,3 +1,4 @@
+
 const $btnSignIn= document.querySelector('.sign-in-btn'),
       $btnSignUp = document.querySelector('.sign-up-btn'),  
       $signUp = document.querySelector('.sign-up'),
@@ -11,8 +12,11 @@ document.addEventListener('click', e => {
 });
 
 function registrarEquipo() {
-    axios.post('http://localhost/crear-usuario', {nombre: 'ilana pepita', email: 'ilana@pepita.com' 
-    })
+    const headers = {
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin' : '*',
+    }
+    axios.post('http://localhost:3002/crear-usuario', {nombre: 'ilana pepita', email: 'ilana@pepita.com' }, {headers})
       .then(function (response) {
         console.log(response);
       })
