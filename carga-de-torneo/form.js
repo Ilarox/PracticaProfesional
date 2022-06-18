@@ -28,10 +28,6 @@ function validacionForm() {
     mostrarMensajeError("nombre", "Nombre no válido");
     condicion = false;
   }
-  if (tipoTorneo.value.length < 1 || tipoTorneo.value.trim() == "") {
-    mostrarMensajeError("tipoTorneo", "Tipo de torneo no válido");
-    condicion = false;
-  }
   if (fechaInicio.value > fechaFin.value || fechaInicio.value =="") {
     mostrarMensajeError("fechaInicio", "Fecha no válida");
     condicion = false;
