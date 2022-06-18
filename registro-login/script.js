@@ -28,13 +28,9 @@ function registrarEquipo() {
 function ValidarRegistro()
 {
     var nombre= document.getElementById("nombreId");
-
     var email= document.getElementById("emailId");
-
     var telefono= document.getElementById("telefonoId");
-    
     var contrasenia= document.getElementById("contraseniaId");
-    
     var verificacion=document.getElementById("verificacionId");
     
     if (ValidarNombre(nombre)==false)

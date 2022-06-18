@@ -7,6 +7,11 @@ body {
   margin: 0;
   background: var(--cfondo);
   font-family: sans-serif;
+  background-image: url("https://webimages.iadb.org/Drupal_pantheon/2021-12/iStock-1049704540%20(1)_0.jpg?VersionId=jE7ODk8H03AEP9D8b1xmmrAy4G6cHRN3");
+  background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #222;
 }
 
 .container {
@@ -50,11 +55,7 @@ body {
   padding: 30px 50px;
   margin: auto;
   margin-top: 10px;
-  background: linear-gradient(
-    0deg,
-    var(--cfondoForm1) 0%,
-    var(--cfondoForm2) 50%
-  );
+  background: linear-gradient(45deg, rgb(238, 139, 139), transparent);
 }
 
 .form-titulo {

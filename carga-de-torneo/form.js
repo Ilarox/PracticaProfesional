@@ -28,27 +28,27 @@ function validacionForm() {
     mostrarMensajeError("nombre", "Nombre no válido");
     condicion = false;
   }
-  if (tipoTorneo.value.length < 1) {
+  if (tipoTorneo.value.length < 1 || tipoTorneo.value.trim() == "") {
     mostrarMensajeError("tipoTorneo", "Tipo de torneo no válido");
     condicion = false;
   }
-  if (fechaInicio.value.length < 1) {
+  if (fechaInicio.value > fechaFin.value || fechaInicio.value =="") {
     mostrarMensajeError("fechaInicio", "Fecha no válida");
     condicion = false;
   }
-  if (fechaFin.value.length < 1){
+  if (fechaFin.value < fechaInicio.value || fechaFin.value =="") {
     mostrarMensajeError("fechaFin", "Fecha no válida");
     condicion = false;
   }
-  if (valorInscripcion.value.length < 1 || valorInscripcion.value.trim() == "") {
+  if (valorInscripcion.value < 1 || valorInscripcion.value.trim() == "") {
     mostrarMensajeError("valorInscripcion", "Valor no válido");
     condicion = false;
   }
-  if (minEquipos.value < 1) {
+  if (minEquipos.value <1 || minEquipos.value > maxEquipos.value) {
     mostrarMensajeError("minEquipos", "Valor no válido");
     condicion = false;
   }
-  if (maxEquipos.value <1) {
+  if (maxEquipos.value <1 || maxEquipos.value < minEquipos.value) {
     mostrarMensajeError("maxEquipos", "Valor no válido");
     condicion = false;
   }
