@@ -20,17 +20,17 @@ $(document).ready(function(){
         ],
  
         //carga de datos
-        data: [{
+       /* data: 
+       [{
               nombre: 'Ana',
               apellido: 'Perez',
               telefono: '1532222222',
               dni: '40500500'    
-              },
-        ],
+              },],*/
 
         //definición de botones
         buttons: {
-            addButton: '<input type="button" value="Nuevo" class="btn btn-success" />',
+            addButton: '<input type="button" value="Agregar" class="btn btn-success" />',
             cancelButton: '<input type="button" value="Cancelar" class="btn btn-primary" />',
             deleteButton: '<input type="button" value="Borrar" class="btn btn-danger" />',
             editButton: '<input type="button" value="Editar" class="btn btn-primary" />',
