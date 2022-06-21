@@ -19,9 +19,5 @@ botonEnter.addEventListener('click',() =>{
 })
 
 function jugadoraEliminada(element){
-    console.log('el elemento que tengo es: ', element);
-    console.log('y su padre es:', element.parentNode);
-    console.log('y su abuelo es:', element.parentNode.parentNode);
-    // console.log(element.parentNode.parentNode)
      element.parentNode.parentNode.removeChild(element.parentNode)
  }
