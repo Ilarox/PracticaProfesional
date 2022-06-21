@@ -12,6 +12,10 @@
 }
 body {
    background: linear-gradient(to bottom, var(--purple) , var(--blue-light)) no-repeat;
+   background-image: url("https://webimages.iadb.org/Drupal_pantheon/2021-12/iStock-1049704540%20(1)_0.jpg?VersionId=jE7ODk8H03AEP9D8b1xmmrAy4G6cHRN3");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
    height: 100vh;
    font-family: 'Prompt', sans-serif;
 }
@@ -22,17 +26,18 @@ body {
    width: 1000px;
    height: 1200px;
    margin: 0 auto;
-  
+   background: linear-gradient(45deg, black, transparent);
    padding: 0 30px;
 } 
 
 .perfil h1 {
-   color: var(--white) ;
+   color: #681055;
+   padding: 52px;
    
 }
 .perfil span {
-   color: var(--white);
-   letter-spacing: 1px;
+   color: white;
+   letter-spacing: 6px;
 }
 
 
@@ -75,7 +80,7 @@ body {
    margin-bottom: 20px;
 }
 .seccion-jugadora li {
-   background: linear-gradient(to bottom,var(--blue-dark),var(--green));
+   background: linear-gradient(to bottom,#6f2770,var(--green));
    border-radius:15px ;
    display: flex;
    align-items: center;
