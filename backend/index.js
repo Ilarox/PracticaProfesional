@@ -1,3 +1,9 @@
+/**
+ * this is the backend 
+ * 
+ * 
+ */
+
 // Require packages and set the port
 const express = require('express');
 const port = 3002;

@@ -11,10 +11,13 @@ document.addEventListener('click', e => {
     }
 });
 
+/**
+ * función front-end para pegarle al backend
+ */
 function registrarEquipo() {
     const headers = {
-        'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin' : '*',
+        //'Content-Type': 'application/json',
+        //'Access-Control-Allow-Origin' : '*',
     }
     axios.post('http://localhost:3002/crear-usuario', {nombre: 'ilana pepita', email: 'ilana@pepita.com' }, {headers})
       .then(function (response) {
